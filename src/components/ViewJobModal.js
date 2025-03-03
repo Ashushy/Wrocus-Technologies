@@ -21,10 +21,24 @@ const ViewJobModal = ({ isOpen, closeModal, job }) => {
         ? job.job_description.split("\n").filter((point) => point.trim() !== "").map((point) => `${point.trim()}`)
         : [];
 
+    // Handle outside click
+    const handleOverlayClick = (e) => {
+        if (e.target.id === "modal-overlay") {
+            closeModal();
+        }
+    };
+
     return (
-        <div className="fixed inset-0 flex items-start justify-center bg-gray-900 bg-opacity-50 p-4">
+        <div 
+            id="modal-overlay" 
+            className="fixed inset-0 flex items-start justify-center bg-gray-900 bg-opacity-50 p-4"
+            onClick={handleOverlayClick}
+        >
             {/* Modal Container with spacing from navbar */}
-            <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-2xl max-h-[85vh] overflow-y-auto mt-24">
+            <div 
+                className="bg-white p-6 rounded-lg shadow-lg w-full max-w-2xl max-h-[85vh] overflow-y-auto mt-24"
+                onClick={(e) => e.stopPropagation()} // Prevent click inside the modal from closing it
+            >
                 <h2 className="text-2xl font-bold text-blue-600">{job.job_title}</h2>
                 <div className="mt-4 space-y-2 text-gray-800">
                     <p><strong>Company:</strong> {job.company}</p>
@@ -36,12 +50,12 @@ const ViewJobModal = ({ isOpen, closeModal, job }) => {
                     <p><strong>Salary:</strong> {job.salary}</p>
                     <p><strong>Benefits:</strong> {job.benefit}</p>
                     <p><strong>Application Deadline:</strong> {new Date(job.application_deadline).toDateString()}</p>
-                    
+
                     {/* Job Description in Proper Bullet Points */}
                     {jobDescriptionPoints.length > 0 && (
                         <div>
                             <strong>Job Description:</strong>
-                            <ul className=" mt-2 space-y-2 pl-4 text-gray-700">
+                            <ul className="mt-2 space-y-2 pl-4 text-gray-700">
                                 {jobDescriptionPoints.map((point, index) => (
                                     <li key={index} className="leading-relaxed">{point}</li>
                                 ))}
@@ -63,4 +77,5 @@ const ViewJobModal = ({ isOpen, closeModal, job }) => {
         </div>
     );
 };
+
 export default ViewJobModal;
