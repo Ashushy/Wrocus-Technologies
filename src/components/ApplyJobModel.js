@@ -81,7 +81,7 @@ const JobApplicationModal = ({ isOpen, closeModal, successMessage, onSubmit, job
 
               <div className="flex items-center mb-3">
                 <input type="checkbox" name="willingToRelocate" checked={values.willingToRelocate} onChange={handleChange} className="mr-2" />
-                <label>Are you willing to relocate to {jobLocation || "this location"}?</label>
+                <label>Are you willing to relocate to {jobLocation || "job location"}?</label>
               </div>
 
               <input id="resume" type="file" name='resume' onChange={(e) => setFieldValue("resume", e.target.files[0])} className="w-full p-2 border rounded-md mb-3" />
