@@ -1,12 +1,9 @@
 'use client'
 import EditModel from '@/components/EditModel';
 import { IF } from '@/components/IF';
-import Navbar from '@/components/Navbar';
-import Sidebar from '@/components/Sidebar';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 const Page = () => {
-
   const [jobData, setJobdata] = useState([])
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(true)
@@ -24,16 +21,10 @@ const Page = () => {
     experience: '',
     jobcategory: '',
     benefit: ''
-
   })
-
   const [editModel, setEditModel] = useState(false)
   const [deleteMessage, setDeleteMessage] = useState(null)
-
-  //fetch the all jobData
-
   useEffect(() => {
-
     getJobData();
   }, [])
   const getJobData = async () => {
@@ -43,21 +34,14 @@ const Page = () => {
         throw new Error(`Error:${res.status}`)
       }
       const data = await res.json();
-      console.log("))))", data)
       setJobdata(data.jobData);
-
-
     } catch (error) {
       setError(error, "Error Occured while fething the data")
-
-
     }
     finally {
       setLoading(false)
     }
   }
-
-  //edit form
   const handleEditClick = (job) => {
     setEditingJob(job._id)
     setEditModel(true)
@@ -76,39 +60,27 @@ const Page = () => {
       skill: job.skill
     })
   }
-
-
   const handleSubmit = async (allData) => {
-
     try {
       const res = await fetch(`https://wrocubackendapi.onrender.com/api/updatejobpost/${editingJob}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(allData)
-
       })
       if (!res.ok) {
         throw new Error(`error occured:${res.status}`)
       }
       const updatedJob = await res.json();
       setJobdata((prevData) => prevData.map((job) => (job._id === editingJob ? updatedJob : job)))
-      console.log(updatedJob)
       setTimeout(() => {
         setEditModel(false)
-
       }, 2000);
-
     } catch (error) {
-      console.log(error)
-
     }
-
   }
-
   const handleDeleteClick = async (id) => {
     try {
       const res = await fetch(`https://wrocubackendapi.onrender.com/api/deletejobpost/${id}`, {
-
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json'
@@ -119,24 +91,13 @@ const Page = () => {
       }
       const data = await res.json();
       setDeleteMessage(data.message)
-
-      console.log(data.message)
-
       setJobdata((prevJobs) => prevJobs.filter((job) => job._id !== id));
       setTimeout(() => {
         setDeleteMessage('')
       }, 1000);
-
-
     } catch (error) {
-      console.error('Failed to delete the job:', error)
-
     }
-
-
-
   }
-
   if (loading) {
     return <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
       <p>Loading...</p>
@@ -145,13 +106,8 @@ const Page = () => {
   if (error) {
     return <div>{error}</div>
   }
-
   return (
     <>
-
-      {/* <Navbar /> */}
-
-
       <section className="lg:p-1  flex justify-center bg-gray-100 ">
         <div className="max-w-7xl w-full">
           <div className="bg-white p-4 rounded-lg ">
@@ -165,11 +121,7 @@ const Page = () => {
                       placeholder="Search jobs..."
                       className="flex-grow p-3 border border-gray-300 rounded-lg  focus:outline-none focus:ring-2
                        focus:ring-blue-500 text-gray-700 placeholder-gray-400"
-                       style={{width:'400px'}}
-                    />
-                    {/* <button className="p-3 bg-blue-600 text-white rounded-r-md hover:bg-blue-700 transition-colors duration-200">
-                      <i className="fas fa-search"></i>search
-                    </button> */}
+                       style={{width:'400px'}}/>
                   </div>
                 </div>
               </section>
@@ -189,20 +141,17 @@ const Page = () => {
                 )}
               </div>
             </div>
-
             {deleteMessage && (
               <div className="bg-green-100 text-green-800 p-4 rounded-md my-4">
                 {deleteMessage}
               </div>
             )}
-
             <div className="space-y-6">
               {jobData && jobData.length > 0 ? (
                 jobData.map((item) => (
                   <div
                     key={item._id}
-                    className="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow p-6"
-                  >
+                    className="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow p-6">
                     {/* Header Section */}
                     <div className="flex items-center justify-between border-b pb-4 mb-4">
                       <h3 className="text-xl font-bold text-gray-800">{item.job_title}</h3>
@@ -210,7 +159,6 @@ const Page = () => {
                         Posted on {new Date(item.createdAt).toLocaleDateString('en-US')}
                       </p>
                     </div>
-
                     {/* Job Details */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                       <div>
@@ -252,13 +200,11 @@ const Page = () => {
                         </p>
                       </div>
                     </div>
-
                     {/* Job Description */}
                     <div className="mt-4">
                       <p className="text-md text-gray-800 mt-5 ">Job Description</p>
                       <p className="text-gray-600">{item.job_description}</p>
                     </div>
-
                     {/* Action Buttons */}
                     <div className="flex justify-end space-x-4 mt-6">
                       <button
@@ -290,24 +236,16 @@ const Page = () => {
                 <p className="text-center text-gray-500">No job listings available.</p>
               )}
             </div>
-
-
           </div>
         </div>
       </section>
-
       <IF condition={editModel}>
         <EditModel
           onClose={() => setEditModel(false)}
           handleSubmit={handleSubmit}
-          // handleInputChange={handleInputChange}
-          userData={formData}
-        />
+          userData={formData} />
       </IF>
-
-
     </>
   );
 }
-
 export default Page;

@@ -89,9 +89,11 @@ const page = () => {
                     <table className='table-auto w-full bg-white border-collapse border border-gray-200'>
                         <thead>
                             <tr className='bg-white-100'>
+                                <th className="border px-4 py-2 text-center">Date</th>
                                 <th className="border px-4 py-2 text-center">Name</th>
+                                <th className="border px-4 py-2 text-center">Contact Number</th>
                                 <th className="border px-4 py-2 text-center">Email</th>
-                                <th className="border px-4 py-2 text-center">NoticePeriod(Days)</th>
+                                <th className="border px-4 py-2 text-center">Notice Period(Days)</th>
                                 <th className="border px-4 py-2 text-center">Applied for</th>
                                 <th className="border px-4 py-2 text-center">Resume</th>
 
@@ -101,7 +103,11 @@ const page = () => {
                         <tbody>
                             {getappliedJobData.map((item) => (
                                 <tr key={item._id} className="bg-white p-10">
+                                    <td className="border px-4 py-2 text-start">{item.Date}</td>
                                     <td className="border px-4 py-2 text-start">{item.name}</td>
+
+                                    <td className="border px-4 py-2 text-center">{item.contactNumber}</td>
+
                                     <td className="border px-4 py-2 text-center">{item.email}</td>
                                     <td className="border px-4 py-2 text-center">{item.noticeperiod}</td>
                                     <td className="border px-4 py-2 text-center">{item.jobReference?.job_title || 'N/A'}</td>

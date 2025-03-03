@@ -54,26 +54,17 @@ const page = () => {
             //reset the form state immediatly
             setCreateJob(initialJobState);
             setTimeout(() => {
-
                 router.push('/admincareerpage')
-
-
             }, 2000);
             console.log("responseData", responseData)
         } catch (error) {
             console.log(error)
             setError(error.message)
-
         }
         finally {
             setLoading(false)
         }
-
     }
-   
-
-
-
 
     return (
         <>
