@@ -509,16 +509,16 @@ const Carausel = () => {
         </Carousel>
             </Carousel>
             {/* Floating Chatbot Button */}
-            <div className="fixed bottom-5 right-5">
+            {/* <div className="fixed bottom-5 right-5">
                 <button
                     onClick={() => setChatOpen(!chatOpen)}
                     className="p-3 bg-blue-500 text-white rounded-full shadow-lg hover:bg-blue-700 transition"
                 >
                     <MessageCircle size={24} />
                 </button>
-            </div>
+            </div> */}
             {/* Chatbot Popup */}
-            {chatOpen && (
+            {/* {chatOpen && (
                 <div className="fixed bottom-16 right-5 w-80 bg-white shadow-lg rounded-lg flex flex-col">
                     <div className="bg-blue-600 text-white p-3 flex items-center justify-between rounded-t-lg">
                         <h2 className="text-lg font-semibold">Wrocus Chatbot</h2>
@@ -543,7 +543,7 @@ const Carausel = () => {
                         </button>
                     </div>
                 </div>
-            )}
+            )} */}
         </div>
     );
 };

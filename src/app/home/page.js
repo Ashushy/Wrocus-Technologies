@@ -18,7 +18,7 @@ const Home = () => {
     <div>
         {/* <Navbar /> */}
       <Carausel/>
-      <Chatbot />
+      {/* <Chatbot /> */}
       <OurClient />
       <Services />
       <OurServices />
