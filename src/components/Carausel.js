@@ -311,7 +311,6 @@ const Carausel = () => {
         flexDirection: isMobile ? 'column' : 'row',
         alignItems: 'center',
         height: isMobile ? 'auto' : '700px',
-        // backgroundColor: '#e3f2fd',
         padding: '5px',
         borderRadius: '10px',
         boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
