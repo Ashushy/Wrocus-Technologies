@@ -13,7 +13,7 @@ const OurClient = () => {
       size: { width: 120, height: 80 }
     },
     {
-      src: "https://cdn.brandfetch.io/idTOhC70ZS/w/400/h/400/theme/dark/icon.jpeg?c=1bx1740288256639id64Mup7acMau5-yeL&t=1732652761071",
+      src: "/HT Media logo.jpg",
       alt: "HT",
       size: { width: 80, height: 80 }
     },
