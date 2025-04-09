@@ -4,6 +4,7 @@ import { Formik } from 'formik';
 import { z } from 'zod';
 import { withZodSchema } from "formik-validator-zod";
 import { IF } from './IF';
+import emailjs from 'emailjs-com';
 import ErroreMessageDisplay from './ErroreMessageDisplay';
 
 const RegisterFormSchema = z.object({
@@ -11,7 +12,8 @@ const RegisterFormSchema = z.object({
   email: z.string().email("Invalid email"),
   noticeperiod: z.string().min(1, 'Notice period is required'),
   contactNumber: z.string().min(10, "Contact Number must be 10 digits").max(15, "Contact Number is too long"),
-  date: z.string().optional(), // Make date optional since we're auto-filling it
+  date: z.string().optional(),
+  currentExperience:z.string().min(1,"currentExperience is required"),
   currentCTC: z.string().min(1, "Current CTC is required"),
   expectedCTC: z.string().min(1, "Expected CTC is required"),
   currentOrganization: z.string().min(1, "Current Organization is required"),
@@ -22,12 +24,9 @@ const RegisterFormSchema = z.object({
   )
 });
 
-
-const JobApplicationModal = ({ isOpen, closeModal, successMessage, onSubmit, jobLocation }) => {
+const JobApplicationModal = ({ isOpen, closeModal, successMessage, onSubmit, jobLocation,jobTitle }) => {
   const [formSubmitted, setFormSubmitted] = useState(false);
-  
   if (!isOpen) return null;
-
   const getFormattedDate = () => {
     const today = new Date();
     return today.toLocaleDateString('en-CA'); // 'en-CA' ensures YYYY-MM-DD format
@@ -38,7 +37,8 @@ const initialValues = {
     email: '',
     noticeperiod: '',
     contactNumber: '',
-    date: getFormattedDate(), // Call function for formatted date
+    currentExperience:'',
+    date: getFormattedDate(), 
     currentCTC: '',
     expectedCTC: '',
     currentOrganization: '',
@@ -46,29 +46,45 @@ const initialValues = {
     resume: null
 };
 
+const handleFormSubmit = async (values, { setSubmitting, resetForm }) => {
+  console.log("Form fields before submission", values);
+  onSubmit(values);
 
+  // const sendEmail = async () => {
+  //   const templateParams = {
+  //     name: values.name,
+  //     email: values.email,
+  //     jobTitle: jobTitle || 'Job Position', 
+  //   };
+  //   try {
+  //     const response = await emailjs.send(
+  //       'service_xrkw10b',  
+  //       'template_bjiyhjc',  
+  //       templateParams,
+  //       'Qyuwmtqjaif-q-mGT'     
+  //     );
+  //     console.log('Email sent successfully:', response);
+  //   } catch (error) {
+  //     console.error('Error sending email:', error);
+  //   }
+  // };
+  // sendEmail();
 
-  const handleFormSubmit = (values, { setSubmitting, resetForm }) => {
-    console.log("Form fields before submission", values);
-    onSubmit(values); // Pass Formik's values directly
-
+  // Handle form submission state
+  setTimeout(() => {
+    setSubmitting(false);
+    setFormSubmitted(true);
+    resetForm();
     setTimeout(() => {
-        setSubmitting(false);
-        setFormSubmitted(true);
-        resetForm();
-        setTimeout(() => {
-            setFormSubmitted(false);
-            closeModal();
-        }, 3000);
-    }, 2000);
+      setFormSubmitted(false);
+      closeModal();
+    }, 3000); 
+  }, 2000); 
 };
-
-
   return (
     <div className="fixed inset-0 bg-gray-600 bg-opacity-75 flex justify-center items-center z-50" onClick={closeModal}>
       <div className="bg-white p-8 rounded-lg w-1/2 relative" onClick={(e) => e.stopPropagation()}>
-        <h2 className="text-2xl font-bold mb-4 text-center">Apply for Job</h2>
-        
+      <h2 className="text-2xl font-bold mb-4 text-center">Apply for {jobTitle || 'Job Title'}</h2>
         {formSubmitted ? (
           <div className="text-center text-green-600 text-xl font-semibold">
             ✅ Successfully Submitted!
@@ -89,7 +105,6 @@ const initialValues = {
                     </div>
                   </div>
                 )}
-
                 {/* Form */}
                 <form onSubmit={handleSubmit} className="relative z-0">
                   <input type="text" name="name" placeholder="Full Name" onChange={handleChange} onBlur={handleBlur} value={values.name} className="w-full p-2 border rounded-md mb-3" />
@@ -97,9 +112,6 @@ const initialValues = {
 
                   <input type="email" name="email" placeholder="Email" onChange={handleChange} onBlur={handleBlur} value={values.email} className="w-full p-2 border rounded-md mb-3" />
                   <IF condition={touched.email && errors.email}><ErroreMessageDisplay errorMeassage={errors.email} /></IF>
-
-                  {/* <input type="date" name="date" onChange={handleChange} onBlur={handleBlur} value={values.date} className="w-full p-2 border rounded-md mb-3" />
-                  <IF condition={touched.date && errors.date}><ErroreMessageDisplay errorMeassage={errors.date} /></IF> */}
 
                   <select name="noticeperiod" onChange={handleChange} onBlur={handleBlur} value={values.noticeperiod} className="w-full p-2 border rounded-md mb-3">
                    <option value='' disabled>Notice Period</option>
@@ -110,27 +122,28 @@ const initialValues = {
                    <option value='45-60'>45-60</option>
                </select>
                  <IF condition={touched.noticeperiod && errors.noticeperiod}><ErroreMessageDisplay errorMeassage={errors.noticeperiod} /></IF>
-
                  <input type="text" name="contactNumber" placeholder="Contact Number" onChange={handleChange} onBlur={handleBlur} value={values.contactNumber} className="w-full p-2 border rounded-md mb-3" />
+
+                 <IF condition={touched.currentExperience && errors.currentExperience}><ErroreMessageDisplay errorMeassage={errors.currentExperience} /></IF>
+                 <input type="text" name="currentExperience" placeholder="currentExperience" onChange={handleChange} onBlur={handleBlur} value={values.currentExperience} className="w-full p-2 border rounded-md mb-3" />
+
                  <IF condition={touched.contactNumber && errors.contactNumber}><ErroreMessageDisplay errorMeassage={errors.contactNumber} /></IF>
-
                 <input type="text" name="currentCTC" placeholder="Current CTC" onChange={handleChange} onBlur={handleBlur} value={values.currentCTC} className="w-full p-2 border rounded-md mb-3" />
-               <IF condition={touched.currentCTC && errors.currentCTC}><ErroreMessageDisplay errorMeassage={errors.currentCTC} /></IF>
 
+                <IF condition={touched.currentCTC && errors.currentCTC}><ErroreMessageDisplay errorMeassage={errors.currentCTC} /></IF>
                  <input type="text" name="expectedCTC" placeholder="Expected CTC" onChange={handleChange} onBlur={handleBlur} value={values.expectedCTC} className="w-full p-2 border rounded-md mb-3" />
+
                  <IF condition={touched.expectedCTC && errors.expectedCTC}><ErroreMessageDisplay errorMeassage={errors.expectedCTC} /></IF>
+                <input type="text" name="currentOrganization" placeholder="Current Organization" onChange={handleChange} onBlur={handleBlur} value={values.currentOrganization} className="w-full p-2 border rounded-md mb-3" />
 
-               <input type="text" name="currentOrganization" placeholder="Current Organization" onChange={handleChange} onBlur={handleBlur} value={values.currentOrganization} className="w-full p-2 border rounded-md mb-3" />
                  <IF condition={touched.currentOrganization && errors.currentOrganization}><ErroreMessageDisplay errorMeassage={errors.currentOrganization} /></IF>
-
                 <div className="flex items-center mb-3">
                   <input type="checkbox" name="willingToRelocate" checked={values.willingToRelocate} onChange={handleChange} className="mr-2" />
                   <label>Are you willing to relocate to {jobLocation || "job location"}?</label>
               </div>
-
                <input id="resume" type="file" name='resume' onChange={(e) => setFieldValue("resume", e.target.files[0])} className="w-full p-2 border rounded-md mb-3" />
-               <IF condition={touched.resume && errors.resume}><ErroreMessageDisplay errorMeassage={errors.resume} /></IF>
 
+               <IF condition={touched.resume && errors.resume}><ErroreMessageDisplay errorMeassage={errors.resume} /></IF>
                   <div className="flex justify-end">
                     <button type="button" onClick={closeModal} className="bg-gray-500 text-white py-2 px-4 rounded mr-4">Cancel</button>
                     <button type="submit" className="bg-blue-600 text-white py-2 px-4 rounded" disabled={isSubmitting || !isValid}>
@@ -147,4 +160,7 @@ const initialValues = {
   );
 };
 export default JobApplicationModal;
+
+
+
 
