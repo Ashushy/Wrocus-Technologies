@@ -9,7 +9,7 @@ const services = [
     {
         title: 'Salesforce Consulting',
         description: 'Our Salesforce Consulting service offers expert guidance to help you seamlessly implement Salesforce and optimize your CRM processes. We provide strategic insights on best practices, tailored recommendations to address your unique business needs, and hands-on support to ensure a smooth transition. Our goal is to enhance your CRM efficiency, improve data management, and drive better customer relationships through a customized Salesforce strategy.',
-        img: 'https://nuagebiz.tech/wp-content/uploads/2021/09/image-1.png',
+        img: '/salesforce consulting.jpg',
         benefits: [
             'Enhanced CRM efficiency',
             'Improved data management',
@@ -19,7 +19,7 @@ const services = [
     {
         title: 'Custom Salesforce Development',
         description: 'Tailored Salesforce applications and customizations to meet your business needs. Whether you require unique workflows, advanced automation, or custom user interfaces, we build solutions that integrate seamlessly with your existing systems.',
-        img: 'https://miro.medium.com/v2/resize:fit:1024/0*fVJMXTrFmNXrGKL6.png',
+        img: '/salesforce custom development.jpg',
         benefits: [
             'Custom workflows and automation',
             'Seamless system integration',
@@ -29,7 +29,7 @@ const services = [
     {
         title: 'Salesforce Integration',
         description: 'Seamlessly integrate Salesforce with your existing systems and third-party applications. We ensure smooth data migration and system synchronization to enhance operational efficiency and eliminate data silos.',
-        img: 'https://www.sfdcpoint.com/wp-content/uploads/2021/06/Integration-updated.jpg',
+        img: '/salesforce integration.jpg',
         benefits: [
             'Efficient data synchronization',
             'Elimination of data silos',
@@ -39,7 +39,7 @@ const services = [
     {
         title: 'Salesforce Training',
         description: 'Comprehensive training sessions to empower your team with Salesforce skills. Our training programs cover everything from basic navigation to advanced features, ensuring your team can fully leverage Salesforce’s capabilities.',
-        img: 'https://courses.apexhours.com/wp-content/uploads/2023/03/1646033829.jpg',
+        img: '/salesforce training.jpg',
         benefits: [
             'Hands-on workshops',
             'Tailored training programs',
@@ -49,7 +49,7 @@ const services = [
     {
         title: 'Salesforce Support and Maintenance',
         description: 'Ongoing support and maintenance services to ensure your Salesforce environment runs smoothly. We offer troubleshooting, performance optimization, and regular updates to keep your system up-to-date and efficient.',
-        img: 'https://images.squarespace-cdn.com/content/v1/60294149195c464885c73d16/ff2ac92a-d5a3-4602-a769-0ff35fa22d1f/Salesforce-Managed-Service-Benefits.jpg',
+        img: '/Salesforce-Managed-Service-Benefits.jpg',
         benefits: [
             'Timely troubleshooting',
             'Performance optimization',
@@ -59,7 +59,7 @@ const services = [
     {
         title: 'Salesforce Migration',
         description: 'Assistance with migrating your data from legacy systems to Salesforce. We ensure a smooth and error-free data transfer, minimizing disruption to your business operations during the migration process.',
-        img: 'https://datatoolspro.com/wp-content/uploads/2023/04/Flow-1.png',
+        img: '/salesforce migration.jpg',
         benefits: [
             'Smooth data transfer',
             'Minimized operational disruption',
@@ -69,7 +69,7 @@ const services = [
     {
         title: 'Salesforce Analytics and Reporting',
         description: 'Custom analytics and reporting solutions to help you make data-driven decisions. We create dashboards and reports tailored to your business needs, providing valuable insights into your Salesforce data.',
-        img: 'https://cdn.buttercms.com/dvbEZiVhQNO56IbXlVqK',
+        img: '/Salesforce Reporting Tools (1).jpg',
         benefits: [
             'Custom dashboards and reports',
             'Data-driven decision making',
@@ -79,7 +79,7 @@ const services = [
     {
         title: 'Salesforce AppExchange Solutions',
         description: 'Help with selecting and implementing solutions from the Salesforce AppExchange. We assist you in finding and integrating the right apps to extend Salesforce’s functionality and meet your business needs.',
-        img: 'https://miro.medium.com/v2/resize:fit:602/1*GHNxqlSNFwd6NJhQeP453g.png',
+        img: '/salesforce app exchange.jpg',
         benefits: [
             'Access to a wide range of apps',
             'Enhanced Salesforce functionality',

@@ -91,7 +91,7 @@ const StaffAugmentationServices = () => {
               </ol>
             </div>
             <div className="lg:w-1/2 flex justify-center lg:justify-end">
-              <img src="https://ewzduhvhjkj.exactdn.com/wp-content/uploads/2022/08/07160431/Augment-your-team-1-2.png?strip=all&lossy=1&ssl=1" alt="Staff Augmentation" />
+              <img src="/staff augemntation.jpg" alt="Staff Augmentation" />
             </div>
           </div>
         </div>

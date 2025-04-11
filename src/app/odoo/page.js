@@ -70,34 +70,7 @@ const page = () => {
         <OdooDevelopment />
       </section>
 
-      {/* <section className="mb-2 py-6 flex flex-col md:flex-row items-center bg-gray-50" data-aos="zoom-in-up">
-  <div className="hidden md:block md:w-1/2 p-4 flex justify-center">
-    <img
-      src="https://media.licdn.com/dms/image/D5612AQFvVi1RQi2s4A/article-cover_image-shrink_720_1280/0/1683108858545?e=2147483647&v=beta&t=vuDPF_SxmJR5QSAwLD1GpECwLw3FYiDw1z_eK1CrRBc"
-      alt="Development Process"
-      className="rounded-lg"
-      style={{ height: 'auto', maxWidth: '100%', maxHeight: '350px' }}
-    />
-  </div>
-  <div className="md:w-1/2 p-4">
-    <h2 className="text-2xl lg:text-3xl font-bold text-gray-950 mb-4 text-center md:text-left">Our Development Process</h2>
-    <p className="mb-4 text-md lg:text-lg text-gray-950 text-center md:text-left">
-      Our development process is designed to deliver high-quality, custom solutions that align perfectly with your business objectives.
-    </p>
-    <ol className="list-decimal list-inside space-y-2 text-sm">
-      {[
-        "Consultation: We begin by understanding your business needs and objectives.",
-        "Planning: We create a roadmap detailing features, timelines, and milestones.",
-        "Development: Our team builds the application, ensuring adherence to best practices and industry standards.",
-        "Testing: Rigorous testing is conducted to identify and fix any issues before launch.",
-        "Deployment: We assist with the smooth deployment of your custom app.",
-        "Training & Support: We provide training for your team and ongoing support to maximize your app's effectiveness."
-      ].map((step, index) => (
-        <li key={index}><strong>{step.split(':')[0]}</strong> {step.split(':')[1]}</li>
-      ))}
-    </ol>
-  </div>
-</section> */}
+  
 
       <style jsx>{`
   @media (max-width: 768px) {

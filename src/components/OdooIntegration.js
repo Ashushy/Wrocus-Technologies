@@ -26,7 +26,7 @@ const OdooIntegration = () => {
                     </div>
                     <div className='w-full md:w-1/2 flex justify-center'>
                         <img
-                            src='https://portcities.net/web/image/24931-48928791/ERP%20System.png'
+                            src='/odoo integartion1.jpg'
                             alt='Odoo Integration'
                             className='object-cover w-full h-auto rounded-lg mt-12 max-w-lg' // Responsive image with max-width
                         />

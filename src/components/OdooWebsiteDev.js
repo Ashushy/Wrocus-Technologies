@@ -39,7 +39,7 @@ const OdooWebsiteDev = () => {
                         <div className='flex flex-col md:flex-row justify-between'>
                             <div className='w-full md:w-1/2 flex justify-center'>
                                 <img
-                                    src='https://media.licdn.com/dms/image/C5612AQGpwJPnvMx8NA/article-cover_image-shrink_720_1280/0/1616578587955?e=2147483647&v=beta&t=5gMCCd926R9tMkqcswVIswqCBsljR8tZmAqs5iguq_A'
+                                    src='/website devlopment odoo.jpg'
                                     alt="Website Development"
                                     className='h-auto max-w-full max-h-[300px] object-contain transition-transform duration-300 hover:scale-105'
                                 />
@@ -71,7 +71,7 @@ const OdooWebsiteDev = () => {
                     </div>
                     <div className='w-full md:w-1/2 flex justify-center mt-6 md:mt-0'>
                         <img
-                            src='https://media.licdn.com/dms/image/v2/D5612AQF95ms-ryODOg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1705485850044?e=2147483647&v=beta&t=dPy6zgFAz8ujgasV-zQ2s7vc587fJx8PlXqFr1mUHEM'
+                            src='/why choose us odoo.jpg'
                             alt="Website Development"
                             className='h-auto max-w-full max-h-[300px] object-contain'
                         />

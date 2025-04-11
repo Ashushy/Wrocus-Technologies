@@ -47,12 +47,12 @@ const page = () => {
                     <h2 className="text-2xl font-bold mb-8 text-center">Our Services</h2>
                     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                         {[
-                            { title: 'Custom App Development', description: 'We build custom mobile applications from scratch, tailored to your specific needs.', imageUrl: 'https://www.tangenttek.com/storage/app/public/UploadedBlogs/3St8SGSqca9nI4is2lYDHdeX3Rwb5LVOaURLUZMs.jpg' },
-                            { title: 'Cross-Platform Development', description: 'Develop apps that work seamlessly on both iOS and Android platforms.', imageUrl: 'https://static.tildacdn.com/tild6561-6538-4663-b266-623435653439/cross-platform-app-d.png' },
-                            { title: 'UI/UX Design', description: 'Create intuitive and engaging designs that enhance user experience.', imageUrl: 'https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149051556.jpg' },
-                            { title: 'App Maintenance & Support', description: 'Ongoing maintenance to keep your app up-to-date and functional.', imageUrl: 'https://www.serole.com/wp-content/uploads/2018/09/2.Application-Maintenance-Support-banner-01.jpg' },
-                            { title: 'Consulting & Strategy', description: 'Provide expert advice and strategic planning to align technology with your business goals.', imageUrl: 'https://www.glueup.com/sites/default/files/image_1571.png' },
-                            { title: 'Integration & API Development', description: 'Build and integrate APIs to connect your app with other services and platforms.', imageUrl: 'https://media.excellentwebworld.com/wp-content/uploads/2022/03/17091451/best-api-development-services.webp' }
+                            { title: 'Custom App Development', description: 'We build custom mobile applications from scratch, tailored to your specific needs.', imageUrl: '/customapp.jpg' },
+                            { title: 'Cross-Platform Development', description: 'Develop apps that work seamlessly on both iOS and Android platforms.', imageUrl: '/cross-platform-app.jpg' },
+                            { title: 'UI/UX Design', description: 'Create intuitive and engaging designs that enhance user experience.', imageUrl: '/ui-ux-design.jpg' },
+                            { title: 'App Maintenance & Support', description: 'Ongoing maintenance to keep your app up-to-date and functional.', imageUrl: '/maintainance&support.jpg' },
+                            { title: 'Consulting & Strategy', description: 'Provide expert advice and strategic planning to align technology with your business goals.', imageUrl: '/consultancy&services.jpg' },
+                            { title: 'Integration & API Development', description: 'Build and integrate APIs to connect your app with other services and platforms.', imageUrl: '/best-api-development-services.jpg' }
                         ].map((service, index) => (
                             <div key={index} className="p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" data-aos="zoom-in-up">
                                 <img src={service.imageUrl} alt={service.title} className="w-full h-40 object-cover rounded-t-lg" />
@@ -73,7 +73,7 @@ const page = () => {
                     </h2>
                     <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
                         <div className="md:w-1/2 mb-8 md:mb-0">
-                            <img src="https://www.slideteam.net/media/catalog/product/cache/1280x720/w/h/why_choose_us_for_your_app_development_ios_app_development_slide01.jpg" alt="Why Choose Us" className="w-full h-auto rounded-lg shadow-lg" />
+                            <img src="/why choose us.jpg" alt="Why Choose Us" className="w-full h-auto rounded-lg shadow-lg" />
                         </div>
                         <div className="md:w-1/2 text-center md:text-left">
                             <p className="p-4 text-xl mb-6">

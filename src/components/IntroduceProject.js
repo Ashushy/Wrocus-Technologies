@@ -13,35 +13,35 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 const cardData = [
     {
         id: 1,
-        imgSrc: 'https://www.localwebsitedesign.com/wp-content/uploads/2014/02/responsive-web-design.png',
+        imgSrc: '/basic project.jpg',
         title: 'Basic Project ',
         description: 'DESIGN / DEVELOPMENT',
         name: <ArrowForwardIcon />
     },
     {
         id: 2,
-        imgSrc: 'https://img.freepik.com/premium-photo/low-angle-view-group-young-teenagers-holding-cell-phones-surprised-faces-looking-screen-concept-technology-connection-colorful_325573-674.jpg?semt=ais_hybrid',
+        imgSrc: '/socialmedia.jpg',
         title: 'Social Media App',
         description: 'DESIGN / TECHNOLOGY',
         name: <ArrowForwardIcon />
     },
     {
         id: 3,
-        imgSrc: 'https://img.freepik.com/premium-photo/professional-architect-working-office-desk-wearing-vr-headset-he-is-viewing-virtual-reality-interface_141188-6206.jpg',
+        imgSrc: '/design-idea.jpg',
         title: 'App for Virtual Reality',
         description: 'DESIGN / IDEA',
         name: <ArrowForwardIcon />
     },
     {
         id: 4,
-        imgSrc: 'https://www.securitymagazine.com/ext/resources/Default-images/Responsive-Defaults/cyber-900.jpg?1554749582',
+        imgSrc: '/security.jpg',
         title: 'Analysis Of Security',
         description: 'IDEAS / TECHNOLOGY',
         name: <ArrowForwardIcon />
     },
     {
         id: 5,
-        imgSrc: 'https://www.cxtoday.com/wp-content/uploads/2022/03/ecommerce-3.png',
+        imgSrc: '/ecommerce.jpg',
         title: 'eCommerce Website',
         description: 'DESIGN / IDEA',
         name: <ArrowForwardIcon />

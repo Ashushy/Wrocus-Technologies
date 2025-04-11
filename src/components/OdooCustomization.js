@@ -60,7 +60,7 @@ const OdooCustomization = () => {
                     </div>
                     <div className='w-full md:w-1/2 flex justify-end mt-6 md:mt-0'>
                         <img
-                            src='https://www.infiraise.com/wp-content/uploads/2021/08/QA_1_img_1-1.png'
+                            src='/odoo consulting.jpg'
                             className='bg-gray-100 p-5 w-full h-auto md:w-3/4' // Responsive width
                             alt='Quality Assurance'
                         />

@@ -71,7 +71,7 @@ const page = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
                         {/* Cloud Migration Card */}
                         <div className="bg-blue-950 border border-gray-300 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300" data-aos="zoom-in-up">
-                            <img src="https://raw.githubusercontent.com/Zafar9708/AnbruchIT/refs/heads/main/public/Assets/cloudConsultant/cloud-migration-min.webp" alt="Cloud Migration" className="w-full h-48 object-cover rounded-t-lg mb-4" />
+                            <img src="/cloud-migration.jpg" alt="Cloud Migration" className="w-full h-48 object-cover rounded-t-lg mb-4" />
                             <h3 className="text-2xl font-semibold mb-3 text-white">Cloud Migration</h3>
                             <p className="text-white mb-4">
                                 Seamlessly transition your IT infrastructure to the cloud, optimizing performance and cost-efficiency.
@@ -85,7 +85,7 @@ const page = () => {
 
                         {/* Cloud Optimization Card */}
                         <div className="bg-blue-950 border border-gray-300 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300" data-aos="zoom-in-up">
-                            <img src="https://github.com/Zafar9708/AnbruchIT/blob/main/public/Assets/cloudConsultant/cloud-cost-optimization-fb.png?raw=true" alt="Cloud Optimization" className="w-full h-48 object-cover rounded-t-lg mb-4" />
+                            <img src="/cloud-cost-optimization.jpg" alt="Cloud Optimization" className="w-full h-48 object-cover rounded-t-lg mb-4" />
                             <h3 className="text-2xl font-semibold mb-3 text-white">Cloud Optimization</h3>
                             <p className="text-white mb-4">
                                 Maximize the value of your cloud investment through performance tuning, cost optimization, and security best practices.
@@ -99,7 +99,7 @@ const page = () => {
 
                         {/* Cloud Security Card */}
                         <div className="bg-blue-950 border border-gray-300 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300" data-aos="zoom-in-up">
-                            <img src="https://github.com/Zafar9708/AnbruchIT/blob/main/public/Assets/cloudConsultant/EC_Data_Security_Lock_750.jpg?raw=true" alt="Cloud Security" className="w-full h-48 object-cover rounded-t-lg mb-4" />
+                            <img src="/cloud security.jpg" alt="Cloud Security" className="w-full h-48 object-cover rounded-t-lg mb-4" />
                             <h3 className="text-2xl font-semibold mb-3 text-white">Cloud Security</h3>
                             <p className="text-white mb-4">
                                 Protect your sensitive data and ensure compliance with rigorous security standards.
@@ -113,7 +113,7 @@ const page = () => {
 
                         {/* Cloud Consulting Card */}
                         <div className="bg-blue-950 border border-gray-300 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300" data-aos="zoom-in-up">
-                            <img src="https://github.com/Zafar9708/AnbruchIT/blob/main/public/Assets/cloudConsultant/cloud_consulting.jpg?raw=true" alt="Cloud Consulting" className="w-full h-48 object-cover rounded-t-lg mb-4" />
+                            <img src="/cloud_consulting.jpg" alt="Cloud Consulting" className="w-full h-48 object-cover rounded-t-lg mb-4" />
                             <h3 className="text-2xl font-semibold mb-3 text-white">Cloud Consulting</h3>
                             <p className="text-white mb-4">
                                 Get expert guidance on your cloud journey, from strategy development to implementation and ongoing support.
@@ -127,7 +127,7 @@ const page = () => {
 
                         {/* Cloud DevOps Card */}
                         <div className="bg-blue-950 border border-gray-300 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300" data-aos="zoom-in-up">
-                            <img src="https://github.com/Zafar9708/AnbruchIT/blob/main/public/Assets/cloudConsultant/cloud_devops.jpg?raw=true" alt="Cloud DevOps" className="w-full h-48 object-cover rounded-t-lg mb-4" />
+                            <img src="/cloud_devops.jpg" alt="Cloud DevOps" className="w-full h-48 object-cover rounded-t-lg mb-4" />
                             <h3 className="text-2xl font-semibold mb-3 text-white">Cloud DevOps</h3>
                             <p className="text-white mb-4">
                                 Integrate development and operations to streamline workflows, automate deployments, and improve efficiency.
@@ -141,7 +141,7 @@ const page = () => {
 
                         {/* Cloud Analytics Card */}
                         <div className="bg-blue-950 border border-gray-300 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300" data-aos="zoom-in-up">
-                            <img src="https://github.com/Zafar9708/AnbruchIT/blob/main/public/Assets/cloudConsultant/cloud_Analaytics.jpg?raw=true" alt="Cloud Analytics" className="w-full h-48 object-cover rounded-t-lg mb-4" />
+                            <img src="/cloud_Analaytics.jpg" alt="Cloud Analytics" className="w-full h-48 object-cover rounded-t-lg mb-4" />
                             <h3 className="text-2xl font-semibold mb-3 text-white">Cloud Analytics</h3>
                             <p className="text-white mb-4">
                                 Leverage data analytics to gain insights and drive business decisions in the cloud.

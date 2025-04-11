@@ -14,7 +14,7 @@ const services = [
       'Conversion rate optimization (CRO)',
       'A/B testing'
     ],
-    img: 'https://media.licdn.com/dms/image/D4E12AQGsP9ccZDQ2fQ/article-cover_image-shrink_720_1280/0/1702464637647?e=2147483647&v=beta&t=HwLz7wrGOBbN9Y-lIyWgvNeF01wD2-HzImrPpniX9nI',
+    img: '/web analytics.jpg',
   },
   {
     title: 'Mobile App Analytics',
@@ -24,7 +24,7 @@ const services = [
       'App store optimization (ASO)',
       'Crash reporting'
     ],
-    img: 'https://mobisoftinfotech.com/resources/wp-content/uploads/2021/11/the-role-of-mobile-app-analytics-to-build-successful-apps.png',
+    img: '/mobile app analytics.jpg',
   },
   {
     title: 'Data Visualization',
@@ -34,7 +34,7 @@ const services = [
       'Data storytelling',
       'Interactive visualizations'
     ],
-    img: 'https://www.simplilearn.com/ice9/free_resources_article_thumb/Data_Visualization.jpg',
+    img: '/Data_Visualization.jpg',
   },
 ];
 

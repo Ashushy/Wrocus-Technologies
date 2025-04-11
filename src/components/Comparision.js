@@ -11,32 +11,32 @@ const Comparision = () => {
         {
             title: "Minimize Development Challenges",
             description: "At our core, we focus on simplifying the development process. By gaining deep insights into each client's unique requirements, we create customized solutions that address specific challenges.",
-            img: 'https://cdn-employer-wp.arc.dev/wp-content/uploads/2022/05/senior-developer-vs-lead-developer-1128x635.jpg'
+            img: '/minimize.jpg'
         },
         {
             title: "Hire Top Talent ",
             description: "We understand that the success of your projects hinges on the people behind them. That's why we prioritize connecting you with the industry's best talent. Our rigorous selection process ensures that you hire skilled professionals who not only meet your technical requirements but also fit seamlessly into your team culture.",
-            img: 'https://cdn.prod.website-files.com/627cdcca8bc0d22df9b2672f/6583ed03555ae237432a0ed0_Recruit-the-Recruiter-Guide-to-Building-a-Kickass-Recruitment-Team.webp'
+            img: '/hire top talent.jpg'
         },
         {
             title: "Free Expert Consultation",
             description: "Take advantage of our complimentary expert consultation, designed to help you identify your unique challenges and opportunities. Our experienced consultants will provide personalized insights and recommendations tailored to your specific goals.",
-            img: 'https://media.istockphoto.com/id/1347197740/photo/business-people-having-casual-discussion-during-meeting.jpg?s=612x612&w=0&k=20&c=HSnFzyuwUDZFCehBv0W0jjRfwY1eKjGV1Lkek8lXY2Q='
+            img: '/free expert.jpg'
         },
         {
             title: "Innovation",
             description: "At Wrocus Technology, we prioritize innovation as the cornerstone of our success. Our commitment to continuous investment in cutting-edge technology allows us to stay ahead in a rapidly evolving digital landscape.",
-            img: "https://www.simplilearn.com/ice9/free_resources_article_thumb/IT_Engineer_Salary.jpg"
+            img: "/Innovation.jpg"
         },
         {
             title: "Expert Team",
             description: "Our strength lies in our highly skilled team, whose diverse expertise spans multiple disciplines. Comprising specialists in software development, data analysis, cybersecurity, and user experience, we tackle challenges with a better approach.",
-            img: "https://media.istockphoto.com/id/1346125184/photo/group-of-successful-multiethnic-business-team.jpg?s=612x612&w=0&k=20&c=5FHgRQZSZed536rHji6w8o5Hco9JVMRe8bpgTa69hE8="
+            img: "/expert team.jpg"
         },
         {
             title: "Customer Focus",
             description: "We believe that every client is unique, which is why we specialize in delivering tailored solutions that align perfectly with their specific needs and goals. Our approach begins with a thorough understanding of each client's business.",
-            img: 'https://t3.ftcdn.net/jpg/07/47/56/70/360_F_747567018_hxg1VGJo2bGjavrzbMnPuUQmipoHimnF.jpg'
+            img: '/customer focus.jpg'
         },
 
     ];

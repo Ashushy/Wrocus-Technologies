@@ -51,7 +51,7 @@ const Page = () => {
 
     <div className="flex justify-center items-center w-full lg:w-1/2 mt-5 lg:mt-0">
         <img
-            src='https://schaeffler-tomorrow.com/images/lg/21073'
+            src='/recruitment.jpg'
             alt='Recruitment Image'
             className="w-full     transition-transform duration-300 ease-in-out transform hover:scale-105"
             style={{ height: '350px', objectFit: 'cover' }} // Adjusted height for better responsiveness
@@ -76,7 +76,7 @@ const Page = () => {
                 </div>
                 <div className=' lg:w-1/2'>
                     <img
-                        src='https://blog.mettl.com/wp-content/uploads/2022/04/Cover-Image-1.png'
+                        src='/talent sourcing.jpg'
                         alt='Talent image'
                         className='shadow-lg rounded-lg mt-12 md:mt-0 lg:w-full h-auto '
                         style={{ height: '320px' }}
@@ -91,7 +91,7 @@ const Page = () => {
                 <div className='flex flex-col md:flex-row justify-center items-center md:space-x-8' data-aos="zoom-in-up">
                     <div className='w-full md:w-1/2 lg:w-1/2'>
                         <img
-                            src='https://media.licdn.com/dms/image/C5612AQFD3INR32n-Iw/article-cover_image-shrink_600_2000/0/1520103948386?e=2147483647&v=beta&t=jDBb58njZxnkjRvZPs2IkAkeOsRlrSvFUsPqPuC2npI'
+                            src='/screening&selection.jpg'
                             alt='Talent image'
                             className='shadow-lg rounded-lg w-full h-full object-cover'
                             style={{ height: '360px' }} // Set height for uniformity
@@ -119,7 +119,7 @@ const Page = () => {
                     </div>
                     <div className='w-full md:w-1/2'>
                         <img
-                            src='https://www.ziprecruiter.com/svc/fotomat/public-ziprecruiter/uploads/career_advice/interview_questions/coordinator.webp'
+                            src='/interview coordination.jpg'
                             alt='Talent image'
                             className='shadow-lg rounded-lg mt-4 md:mt-0 w-full h-auto'
                             style={{ height: '360px', objectFit: 'cover' }}
@@ -133,7 +133,7 @@ const Page = () => {
                 <div className='flex flex-col md:flex-row justify-center items-center md:space-x-8'>
                     <div className='w-full md:w-1/2'>
                         <img
-                            src='https://businessimprovement.group/wp-content/uploads/2017/07/image-6-1684x878.jpg'
+                            src='/onboardingsupport.jpg'
                             alt='Talent image'
                             className='shadow-lg rounded-lg mt-4 md:mt-0 w-full h-auto'
                             style={{ height: '380px', objectFit: 'cover' }}
@@ -244,35 +244,7 @@ const Page = () => {
                 </div>
             </div>
 
-            {/* <div className='py-6 bg-gray-100 mt-8 p-4'>
-                <h2 className='text-center text-4xl font-bold mb-6 text-black-600'>Success Stories</h2>
-
-                <div className='max-w-4xl mx-auto text-gray-800'>
-                    <h3 className='text-2xl font-semibold mb-4'>Client Testimonials</h3>
-                    <div className='bg-white p-4 rounded-lg shadow-md mb-4' data-aos="zoom-in-up">
-                        <blockquote className='italic text-lg'>
-                            "The team at Network_18 understood our unique needs and delivered exceptional candidates that fit our culture perfectly."
-                        </blockquote>
-                        <p className='text-right font-semibold'>— Jane Doe, HR Manager, ABC Corp</p>
-                    </div>
-                    <div className='bg-white p-4 rounded-lg shadow-md mb-4' data-aos="zoom-in-up">
-                        <blockquote className='italic text-lg'>
-                            "Thanks to Wrocus Technology, we filled our critical roles quickly and efficiently, which allowed us to maintain productivity."
-                        </blockquote>
-                        <p className='text-right font-semibold'>— John Smith, CEO, XYZ Ltd.</p>
-                    </div>
-                    <div className='bg-white p-4 rounded-lg shadow-md mb-4' data-aos="zoom-in-up">
-                        <blockquote className='italic text-lg'>
-                            "Their personalized service made a significant difference in our hiring process. We felt supported every step of the way."
-                        </blockquote>
-                        <p className='text-right font-semibold'>— Sarah Johnson, Talent Acquisition Lead, 123 Inc.</p>
-                    </div>
-
-
-                </div>
-            </div> */}
-
-
+        
             {/* contact to us */}
             <div className='bg-gray-00 mt-5'>
                 <div className='mt-8 text-center'>

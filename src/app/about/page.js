@@ -64,27 +64,27 @@ const Page = () => {
     {
       number: '01',
       text: 'People with the right skill sets.',
-      img: 'https://cdn-icons-png.flaticon.com/512/2773/2773117.png'
+      img: '/adaptation.jpg'
     },
     {
       number: '02',
       text: 'Process ideas from concept to market launch.',
-      img: 'https://png.pngtree.com/png-vector/20230415/ourmid/pngtree-creative-process-line-icon-vector-png-image_6707063.png'
+      img: '/process ideas.jpg'
     },
     {
       number: '03',
       text: 'Adoption of the latest technology.',
-      img: 'https://img.freepik.com/premium-vector/technology-adoption-icon-vector-image-can-be-used-business-performance_120816-343040.jpg'
+      img: '/adaptation of new technology.jpg'
     },
     {
       number: '04',
       text: 'Scalability and customization of each prototype.',
-      img: 'https://img.freepik.com/premium-vector/scalability-icon-vector-image-can-be-used-mass-production_120816-50379.jpg'
+      img: '/sacalability.jpg'
     },
     {
       number: '05',
       text: 'Usability of design in the enterprise ecosystem.',
-      img: 'https://static.thenounproject.com/png/986434-200.png'
+      img: '/usability.jpg'
     },
   ];
   const handlePlayClick = () => {

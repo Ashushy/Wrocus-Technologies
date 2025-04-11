@@ -6,51 +6,51 @@ const OdooDevelopment = () => {
     {
       title: 'Odoo Consultant',
       description: 'Get expert advice on your ERP strategy to optimize processes and overcome challenges.',
-      icon: "https://icon-library.com/images/consulting-icon/consulting-icon-3.jpg",
+      icon: "/odoo consultant.jpg",
       id: 'odoo-consulting'
     },
     {
       title: 'Odoo Implementation',
       description: 'Implement Odoo solutions tailored to your business needs with a focus on successful outcomes.',
-      icon: "https://www.iwesabe.com/iwesabe_website_theme/static/src/img/iWesabe-odoo-ERP-Implementation.png",
+      icon: "/odoo implementation.jpg",
       id: 'odoo-implementaion'
     },
     {
       title: 'Odoo Integration',
       description: 'Integrate Odoo with third-party applications for improved workflows and data consistency.',
-      icon: "https://www.odoo-bs.com/web/image/114005-109bf1b0/odoo_integration_AI.jpg",
+      icon: "/odoo_integration_AI.jpg",
       id: 'odoo-integration'
     },
     {
       title: 'Odoo Migration',
       description: 'Seamlessly migrate your data to Odoo with minimal downtime and maximum efficiency.',
-      icon: "https://sdlccorp.com/wp-content/uploads/2024/03/Ahmad-Khan-1.png",
+      icon: "/odoo migartion.jpg",
       id: 'odoo-migration'
     },
     {
       title: 'Odoo App Development',
       description: 'Create custom applications tailored to your specific needs with our expert development team.',
-      icon: "https://techspawn.com/wp-content/uploads/2021/09/Odoo-Dedicated-Developer.png",
+      icon: "/odoo app development.jpg",
       id: 'odoo-appdev'
     },
    
     {
       title: 'Odoo Customization',
       description: 'Tailor Odoo modules to fit your unique business processes and requirements effectively.',
-      icon: "https://leadmaster.com/wp-content/uploads/2023/08/support.png",
+      icon: "/odoo customization.jpg",
       id: 'odoo-customization'
     },
    
     {
       title: 'Odoo Module Development',
       description: 'Develop dynamic modules that enhance the functionality of your Odoo system for better scalability.',
-      icon: "https://erp-client.cnt.id/web/content/cms.post/26078/image",
+      icon: "/odoo module development.jpg",
       id: 'odoo-module-development'
     },
     {
       title: 'Odoo Website Development',
       description: 'Design and develop websites that seamlessly integrate with your Odoo ERP for enhanced performance.',
-      icon: "https://cdn-icons-png.flaticon.com/512/9364/9364669.png",
+      icon: "/odoo website development.jpg",
       id: 'odoo-website-dev'
     },
    

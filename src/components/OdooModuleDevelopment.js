@@ -59,7 +59,7 @@ const OdooModuleDevelopment = () => {
                         </div>
                         <div className='w-full md:w-1/2 flex justify-center'>
                             <img
-                                src='https://www.wedoo.co.nz/web/image/2000-1d1ed497/Odoo%20App%20Ecosystem%20%281%29.jpg?access_token=aac86a3e-9057-4025-a98d-80ceff3040be'
+                                src='/odoo module devlopment.jpg'
                                 alt="Odoo Versions"
                                 className='mt-6 object-contain w-full   max-w-lg  ' // Improved image styling
                                 style={{height:'400px'}}

@@ -52,22 +52,22 @@ const QualityAutoPage = () => {
                         {/* Service Cards */}
                         {[
                             {
-                                imgSrc: 'https://cdn.prod.website-files.com/5eb9845c0972c01cdaec8415/621849c186aee063ce193b47_article-test-automation-tools.jpg',
+                                imgSrc: '/automated testing.jpg',
                                 title: 'Automated Testing',
                                 description: 'Implement automated testing frameworks to ensure consistent and reliable test coverage across your products.',
                             },
                             {
-                                imgSrc: 'https://www.shutterstock.com/image-vector/workflow-icon-line-style-your-600nw-1410673460.jpg',
+                                imgSrc: '/advanced automation.jpg',
                                 title: 'Advanced Automation Tools',
                                 description: 'Leverage state-of-the-art tools to automate complex workflows and enhance productivity in your quality control processes.',
                             },
                             {
-                                imgSrc: 'https://images.business.com/app/uploads/2022/03/23021742/Marketing-data-analytics_NicoElNino_BDC-3.png',
+                                imgSrc: '/Real time monitoring.jpg',
                                 title: 'Real-Time Monitoring',
                                 description: 'Implement real-time monitoring solutions to track and manage quality metrics continuously and proactively.',
                             },
                             {
-                                imgSrc: 'https://media.istockphoto.com/id/1367967285/photo/automation-software-technology-process-system-business-concept.jpg?s=612x612&w=0&k=20&c=VnRZHYgIfInFhaShiStMroW7PnVyvAC4C9SodjBf4ns=',
+                                imgSrc: '/quality automation.jpg',
                                 title: 'Quality Automation Solutions',
                                 description: 'Streamline your testing processes with our quality automation solutions, ensuring precision and reliability in every release.',
                             },

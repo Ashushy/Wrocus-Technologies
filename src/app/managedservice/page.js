@@ -68,7 +68,7 @@ const ManagedServicesPage = () => {
                                 </p>
                             </div>
                             <div className="lg:w-1/2 flex justify-center lg:justify-end bg-gray-200">
-                                <img src="https://images.spiceworks.com/wp-content/uploads/2023/03/16070722/pasted-image-0-1.png" alt="Managed Services" />
+                                <img src="/managed services.jpg" alt="Managed Services" />
                             </div>
                         </div>
                         <div className="mt-12 text-center">

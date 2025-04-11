@@ -3,12 +3,12 @@ import React from 'react';
 const OurClient = () => {
   const logos = [
     {
-      src: "https://notcommon-production.s3.amazonaws.com/uploads/collection/image/21109/open-uri20240708-17078-owizqu",
+      src: "/ajjtaklogo.jpg",
       alt: "Aaj Tak",
       size: { width: 80, height: 60 }
     },
     {
-      src: "https://www.pluginhive.com/wp-content/uploads/2021/09/DELHIVERY-VAN.jpg",
+      src: "/delihvery logo.jpg",
       alt: "Delhivery",
       size: { width: 120, height: 80 }
     },
@@ -18,22 +18,22 @@ const OurClient = () => {
       size: { width: 80, height: 80 }
     },
     {
-      src: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/04/56/95/045695e7-d27b-baf0-d6a3-4a02233bfcbe/AppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png/1024x1024.jpg",
+      src: "/Times logo.jpg",
       alt: "Times Internet",
       size: { width: 80, height: 200 }
     },
     {
-      src: "https://cdn.brandfetch.io/id0rnPjco0/w/400/h/400/theme/dark/icon.png?k=id64Mup7ac&t=1668516570940",
+      src: "/car dekho.jpg",
       alt: "Car Dekho Logo",
       size: { width: 80, height: 60 }
     },
     {
-      src: "https://www.saasbuddy.in/community/wp-content/uploads/2024/03/magicbrick-1200x900.png",
+      src: "/magicbricks.jpg",
       alt: "Magicbricks",
       size: { width: 80, height: 80 }
     },
     {
-      src: "https://pbs.twimg.com/media/CGLNVTSUUAAuQmG.jpg",
+      src: "/hungama.jpg",
       alt: "Hungama",
       size: { width: 80, height: 80 }
     }

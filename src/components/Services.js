@@ -2,12 +2,7 @@
 import { useEffect } from 'react';
 import Link from 'next/link';
 import { initializeAOS } from '@/app/utils/Aos_setup';
-import Image from 'next/image';
-import CloudOffIcon from '@mui/icons-material/CloudOff';
-import BarChartIcon from '@mui/icons-material/BarChart';
-import GroupsIcon from '@mui/icons-material/Groups';
-import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
-import SupervisorAccountIcon from '@mui/icons-material/SupervisorAccount';
+
 
 export default function ServiceCards() {
     useEffect(() => {
@@ -39,12 +34,12 @@ export default function ServiceCards() {
                     </ul>
                     <div className='flex justify-start gap-10  ml-10 mt-8'>
                         <div data-aos="zoom-in-left" data-aos-delay="400">
-                            <img src='https://ivrnet.com/wp-content/uploads/2020/04/icon-aa-1.png' style={{ height: '80px', width: '80px' }} />
+                            <img src='/experience icon.jpg' style={{ height: '80px', width: '80px' }} />
                             <p className='text-2xl font-bold border-b-2 border-transparent hover:border-blue-600 cursor-pointer'>Experience</p>
                             <p className='text-md text-gray-600 mt-4'>Our great team of more than <br />250+ software experts.</p>
                         </div>
                         <div data-aos="zoom-in-left mt-2 " data-aos-delay="600">
-                            <img src='https://img.freepik.com/premium-vector/flat-icon-representing-settings_941526-9336.jpg'
+                            <img src='/quick support.jpg'
                                 className=' hover:border-blue-600 cursor-pointer '
                                 style={{ height: '70px', width: '70px' }} />
                             <p className='text-2xl  font-bold border-b-2 border-transparent hover:border-blue-600 cursor-pointer mt-2'>Quick Support</p>
@@ -58,7 +53,7 @@ export default function ServiceCards() {
                 {/* Image Content Section */}
                 <div className="image-content flex-1 flex items-center justify-center p-10 md:p-12 mt-2" data-aos="flip-left">
                     <img
-                        src='https://cloud3tech.com/wp-content/uploads/2020/03/image1-home2.png'
+                        src='/services.jpg'
                         className='object-cover w-full  '
                         style={{ height: '450px', maxWidth: '700px' }}
                     />

@@ -22,7 +22,7 @@ const OdooAppDev = () => {
                     <div className="bg-white shadow-md rounded-lg p-6 text-center transition-transform transform hover:scale-105">
                         <h3 className="text-xl font-semibold text-gray-800 mb-2">Custom App Development</h3>
                         <img
-                            src='https://techspawn.com/wp-content/uploads/2021/09/Odoo-Dedicated-Developer.png'
+                            src='/Odoo-Dedicated-Developer.jpg'
                             className="transition-opacity duration-500 ease-in"
                         />
                         <p className="text-gray-600 text-start">
@@ -33,7 +33,7 @@ const OdooAppDev = () => {
                     <div className="bg-white shadow-md rounded-lg p-6 text-center transition-transform transform hover:scale-105">
                         <h3 className="text-xl font-semibold text-gray-800 mb-2">Integration Services</h3>
                         <img
-                            src='https://indexworld.net/wp-content/uploads/2024/07/OSINT-2000x1200-1.jpg'
+                            src='/odoo integration.jpg'
                             className='mt-12 lg:ml-16 transition-opacity duration-500 ease-in'
                             style={{ height: '250px' }}
                         />
@@ -46,7 +46,7 @@ const OdooAppDev = () => {
                         <h3 className="text-xl font-semibold text-gray-800 text-center mb-4 mt-5 p-2 ">UI/UX Design</h3>
                         <div className="flex-grow mb-4 flex justify-center">
                             <img
-                                src='https://buildfire.com/wp-content/themes/buildfire/assets/images/hub-hero.webp'
+                                src='/odoo ui ux.jpg'
                                 className="transition-opacity duration-500 ease-in object-cover mt-8"
                                 style={{ height: '220px', width: 'auto' }} // Adjusted for consistent sizing
                                 alt="UI/UX Design"

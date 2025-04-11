@@ -13,37 +13,37 @@ const OurServices = () => {
       title: 'Web Development',
       // title2: '& Development',
       description: 'We carry more than just good coding skills. Our experience makes us stand out from other web development. Our designs are tailored to meet user needs, ensuring an engaging experience.',
-      icon: "https://cdn-icons-png.freepik.com/512/8713/8713437.png"
+      icon: "/devlopment icon.jpg"
     },
     {
       title: 'Mobile Apps Development',
       // title2: 'Development',
       description: 'Create complex enterprise software, ensure reliable software integration, modernize your legacy system. We focus on building scalable and efficient mobile applications that enhance user engagement.',
-      icon: "https://static.vecteezy.com/system/resources/previews/031/022/358/non_2x/mobile-development-icon-vector.jpg",
+      icon: "/mobile devlopment.jpg",
     },
     {
       title: 'UI/UX Design',
       // title2: 'Design',
       description: 'Build the product you need on time with an experienced team that uses a clear and effective design process. We emphasize user-centered design principles to create intuitive interfaces.',
-      icon: "https://cdn-icons-png.freepik.com/256/12098/12098127.png?semt=ais_hybrid"
+      icon: "/ui ux icon.jpg"
     },
     {
       title: 'QA & Testing',
       // title2: '& Testing',
       description: 'Turn to our experts to perform comprehensive, multi-stage testing and auditing of your software. Our rigorous testing methodologies help identify issues early in the development cycle.',
-      icon: "https://img.freepik.com/premium-vector/qa-testing-icon-vector-image-can-be-used-agile_120816-102975.jpg",
+      icon: "/qa testing.jpg",
     },
     {
       title: 'IT Consultancy',
       // title2: 'Consultancy',
       description: 'Trust our top minds to eliminate workflow pain points, implement new tech, and consolidate app portfolios. We provide strategic insights that align IT initiatives with your business goals.',
-      icon: "https://cdn-icons-png.freepik.com/256/14510/14510945.png?semt=ais_hybrid",
+      icon: "/it consultancy.jpg",
     },
     {
       title: 'Odoo Development',
       // title2: 'Development',
       description: 'Customizing and implementing Odoo solutions to streamline your business processes. Our expertise in Odoo allows us to tailor solutions that fit your specific needs.',
-      icon: "https://www.magictechnolabs.com/assets/images/odoo.webp",
+      icon: "/odoo.jpg",
     },
   ];
 
